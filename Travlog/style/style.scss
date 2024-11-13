@@ -1,0 +1,1214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    
+        .q{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            left: 11%;
+            justify-content: space-between;
+            position: absolute;
+            
+            
+                .stain{
+                    width: 70px;
+                    height: 100%;
+                    background: #FF00001A;
+                    pointer-events: none;                    
+                    z-index: 1;
+                }
+        }
+
+
+        header{
+            width: 100%;
+            height: auto;
+
+
+
+
+
+            nav {
+                width: 100%;
+                height: 100px;
+                display: flex;
+            
+                .container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+            
+                    .menu-icon {
+                        background: #5D50C6;
+                        padding: 5px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        display: none; 
+                    }
+            
+                    ul {
+                        display: flex;
+                        gap: 50px;
+                        padding-top: 20px;
+            
+                        li {
+                            list-style: none;
+            
+                            a {
+                                text-decoration: none;
+                                color: #927e83;
+                                font-size: 18px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: 600;
+                            }
+            
+                            
+                            
+                        }
+                        .close-menu {
+                            display: none; 
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                            background: transparent; 
+                            cursor: pointer;
+                            font-size: 20px;
+                            transition: opacity 0.3s ease, transform 0.3s ease;
+                            margin-bottom: 10px;
+                        }
+                        
+
+                    }
+            
+                    .login {
+                        display: flex;
+                        gap: 50px;
+                        justify-content: center;
+            
+                        .log {
+                            margin-top: 10px;
+            
+                            a {
+                                text-decoration: none;
+                                color: #000;
+                                font-size: 18px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: 600;
+                            }
+                        }
+            
+                        .sign {
+                            padding: 10px 15px;
+                            border-radius: 20px;
+                            background: #5d50c6;
+            
+                            a {
+                                text-decoration: none;
+                                color: #fff;
+                                font-size: 18px;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            
+                @media (max-width: 1400px) {
+                    .container {
+                        .menu-icon {
+                            display: block; 
+                        }
+            
+                        ul {
+                            position: absolute;
+                            
+                            left: 0; 
+                            flex-direction: column;
+                            gap: 20px;
+                            background: #fff;
+                            padding: 20px;
+                            border-radius: 5px;
+                            box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.5);
+                            opacity: 0;
+                            transform: translate(-100%, -100px); 
+                            transition: opacity 0.3s ease, transform 0.3s ease;
+                            gap: 20px;
+                            justify-content: end;
+                            height: 240px;
+                                
+                            &.show {
+                                position: absolute;
+                                display: flex;
+                                gap: 20px;
+                                opacity: 1;
+                                transform: translate(0, 0); 
+                                top: 30px; 
+                                left: 10px; 
+                            }
+                            .close-menu {
+                                display: block;
+                                margin-bottom: 20px;
+                            }   
+                            a{
+                                text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+                            }
+                        }
+            
+                        
+                    }
+                }
+            }
+            
+            
+            
+            
+              
+
+                
+
+                .BOX{
+                    width: 100%;
+                    height: 840px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                        .container{
+                            display: flex;
+                            position: relative;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-wrap: wrap-reverse;
+
+                                .text_box{
+                                    width: 400px;
+                                    height: auto;
+
+
+                                        .ex{
+                                            display: flex;
+                                            
+                                            
+                                            
+                                                p{
+                                                    color: #f85e9f;
+                                                    font-size: 17px;
+                                                    font-family: Arial, Helvetica, sans-serif;
+                                                    font-weight: 600;
+                                                    border-radius: 20px;
+                                                    background: #fff;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    width: 200px;
+                                                    padding: 10px 15px;
+                                                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+                                                }
+
+                                        }
+                                        h1{
+                                            font-size: 68px;
+
+                                                span{
+                                                    color: #f85e9f;
+                                                }
+                                        }
+                                        p{
+                                            font-size: 18px;
+                                            font-family: Arial, Helvetica, sans-serif;
+                                            color: #95959a;
+                                        }
+                                        .buton{
+                                            display: flex;
+                                            gap: 50px;
+                                                .get{
+                                                    border: none;
+                                                    border-radius: 20px;
+                                                    background: #5D50C6;
+                                                    padding: 10px 15px;
+                                                    color: #fff;
+                                                    font-size: 18;
+                                                    font-weight: 600;
+                                                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+                                                }
+                                                .watch{
+                                                    display: flex;
+                                                    border-radius: 20px;
+                                                    padding: 10px 15px;
+                                                    border: #eeeeee 2px solid;
+                                                    background: #fff;
+                                                    font-size: 18;
+                                                    font-weight: 600;
+                                                    gap: 10px;
+                                                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+                                                }
+                                        }
+                                }
+
+                                .img_box{
+                                    width: 770px;
+                                    height: 710px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    position: relative;
+                                        .Vector_earth{
+                                            position: absolute;
+                                            top: 15px;
+
+                                        }
+                                        .left_line1{
+                                           display: flex;
+                                           flex-direction: column;
+                                           position: absolute;
+                                           top: 0px;
+                                           left: 10px;
+
+                                                
+                                                .airplane{
+                                                    width: 35px;
+                                                    margin-left: 43%;
+                                                }
+                                        }
+                                        .left_line2{
+                                            display: flex;
+                                            flex-direction: column;
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 250px;
+ 
+                                                .line{
+                                                    width: 300px;
+                                                    
+                                                }
+                                                 .airplane{
+                                                     width: 40px;
+                                                     margin-left: 67%;
+                                                 }
+                                         }
+                                         .left_line3{
+                                            display: flex;
+                                            position: absolute;
+                                            top: 20px;
+                                            right: 0px;
+                                            gap: 5px;
+                                                
+                                                 .airplane{
+                                                     width: 35px;
+                                                     margin-top: -137%;
+                                                 }
+                                         }
+
+                                         .img{
+                                            width: 570px;
+                                            height: 630px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                                .Vector7{
+                                                    position: absolute;
+                                                    top: 40px;
+                                                    right: 0;
+                                                }
+                                                .img_child{
+                                                    width: 270px;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-between;
+                                                }   
+                                                .user{
+                                                    width: 65px;
+                                                    height: 65px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    position: absolute;
+                                                    border-radius: 100%;
+                                                    background: #ff5721;
+                                                    right: 120px;
+                                                    bottom: 0px;
+                                                }
+                                                .telegram{
+                                                    position: absolute;
+                                                    left: -35px;
+                                                    top: 250px;
+                                                }
+                                         }
+                                }
+
+                        }
+                        .b{        
+                            margin-top: 50px;
+                            .sponsor{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: space-between;
+                                height: auto;
+                            }
+                            
+                            
+                            @media (max-width:1400px) {
+                            
+                                .sponsor{
+                                    width: 600px;
+                                    gap: 30px;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    margin-top: 80px;
+                                }
+                                
+                            }
+                        }
+                        
+                        
+                }
+                @media(max-width: 1400px){
+                    .BOX{
+                        height: auto;
+
+                            .container{
+                                justify-content: center;
+
+                                    .text_box{
+                                        margin-top: 70px;
+                                        width: 700px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        text-align: center;
+                                    }
+                            }
+                    }
+                }
+                @media(max-width: 768px){
+                    .BOX{
+
+                            .container{
+
+                                    .img_box{
+                                        height: 600px;
+                                        // background: red;
+
+                                            .Vector_earth{
+                                                width: 600px;
+                                                margin-top: 20px;
+                                            }
+                                            .left_line2{
+                                                left: 170px;
+                                                    .line{
+                                                        width: 250px;
+                                                    }
+                                            }
+                                            .left_line3{
+                                                top: 50px;
+                                                    .line{
+                                                        height: 150px;
+                                                    }
+                                            }
+                                            .img{
+                                                justify-content: space-around;
+
+                                                    .img_child{
+                                                        width: 200px;
+                                                        height: 500px;
+
+                                                            img{
+                                                                width: 200px;
+                                                            }
+                                                    }
+                                                    .img_child2{
+
+                                                            img{
+                                                                width: 220px;
+                                                            }
+                                                    }
+
+                                            }
+                                    }
+                            }
+                    }
+                }
+                
+
+        }
+        @media(max-width: 1400px){
+            header{
+                height: auto;
+                background: linear-gradient(to bottom right, rgba(255, 127, 80, 0.5) 30%, transparent 50%);
+            }
+        }
+
+
+
+
+
+        .carusel{
+            width: 100%;
+            height: auto;
+            // background: red;
+            margin-top: 50px;
+
+                .container{
+                    
+                        .carousel_box{
+                            display: flex;
+
+                                .txt_box{
+                                    height: 475px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    padding-right: 50px;
+                                
+                                        h3{ 
+                                            color: #f85e9f;
+                                            font-weight: 700;
+                                        
+                                        }
+                                        h1{
+                                            font-weight: 700;
+                                        }
+                                }
+                            
+                                .carousel-container {
+                                    overflow: hidden;
+                                    position: relative;
+                                    height: 475px;
+                                    // background: blue;
+                                        p{
+                                            font-weight: 600;
+                                            font-size: 20px;
+                                        }
+                                        .carousel {
+                                            display: flex;
+                                            transition: transform 0.5s ease-in-out;
+                                            padding: 15px;
+                                                .box {
+                                                    min-width: 350px;
+                                                    height: 440px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-around;
+                                                    align-items: center;
+                                                    font-size: 20px;
+                                                    color: white;
+                                                    border-radius: 60px;
+                                                    margin-right: 50px;
+                                                    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+                                                
+                                                
+                                                        img{
+                                                            width: 64px;
+                                                        }
+                                                    
+                                                        .text{
+                                                            width: 250px;
+                                                            height: auto;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                                p{
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    align-items: center;
+                                                                    text-align: center;
+                                                                    color: #000;
+                                                                    font-size: 20px;
+                                                                    font-weight: 700;
+                                                                        span{
+                                                                            font-weight: 600;
+                                                                            color: #bdbfc7;
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                    
+                                        
+                                }
+                        }
+                        @media (max-width: 1400px) {
+                            .carousel_box{
+                                flex-wrap: wrap;justify-content: center;
+                                
+                                    .txt_box{
+                                        text-align: center;
+                                    }
+
+                                    .carousel-container {
+                                        overflow: visible; 
+                                        height: auto;
+                                        
+
+                                            .carousel {
+                                                transform: none !important; 
+                                                display: flex;
+                                                flex-wrap: wrap; 
+                                                justify-content: center; 
+                                                
+                                                    
+
+                                                    .box {
+                                                        min-width: 285px; 
+                                                    }
+                                            }
+                                            
+                                              
+                                        
+                                      }
+                                      
+                            }
+                            
+                        }
+                        @media (max-width: 1200px) {
+                            .carousel_box{
+                                
+                                    .carousel-container {
+
+                                            .box:nth-child(3){
+                                                margin-top: 40px;
+                                              
+                                            }
+                                            
+                                              
+                                        
+                                      }
+                                      
+                            }
+                        }
+                        @media (max-width: 991px) {
+                            .carousel_box{
+                                
+                                    .carousel-container {
+                                        
+        
+                                            .box:nth-child(3){
+                                                margin-top: 0px;
+                                              
+                                            }
+                                            
+                                              
+                                        
+                                      }
+                                      
+                            }
+                        }
+                        @media (max-width: 990px) {
+                            .carousel_box{
+                                
+                                    .carousel-container {
+
+                                            .carousel {
+                                                
+                                                gap: 50px;
+
+                                            }
+
+                                      }
+                                      
+                            }
+                        }
+                        
+                          
+
+                        .text-botton{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 70px;
+
+                            
+                                .text{
+
+                                        h4{
+                                            color: #f85e9f;
+                                            font-weight: 700;
+                                        
+                                        }
+                                        h1{
+                                            font-weight: 700;
+                                        }
+                                }
+
+                                .botton{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                        .prev, .next {
+                                            
+                                            background: #4061f8;
+                                            border: none;
+                                            color: #fff;
+                                            cursor: pointer;
+                                            border-radius: 100%;
+                                            width: 60px;
+                                            height: 60px;
+                                            font-size: 24px;
+                                            font-weight: 700;
+                                            transition: 0.3s all;
+                                        
+                                                &:hover {
+                                                    color: #4061f8;
+                                                    background: #fff;
+                                                    box-shadow: -1px 2px 10px black;
+                                                }
+                                        }
+                                    
+                                        
+                                }
+
+                        }
+                        
+                        @media (max-width: 1400px) {
+                            .text-botton {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            
+                                    .text{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                
+                                    .botton{
+                                        display: none;
+                                    }
+                            }
+                        }
+                          
+                        .advertising{
+                            margin-top: 80px;
+                            display: flex;
+                            justify-content: space-between;
+                            
+
+                                .box{
+                                    width: 373px;
+                                    height: 555px;
+                                    border-radius: 32px;
+                                    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+                                    
+
+                                        .text{
+                                            padding: 30px 30px;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .text_child1{
+                                                    h4{
+                                                        font-weight: 700;
+                                                        color: #000;
+                                                    }
+                                                    h5{
+                                                        display: flex;
+                                                        align-items: center;
+                                                        gap: 10px;
+                                                        font-weight: 700;
+                                                        color: #ff5721;
+                                                    }
+                                                    p{
+                                                        font-weight: 700;
+                                                        color: #53525c;
+                                                    }
+                                            }
+                                            h4{
+                                                color: #f85e9f;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    
+                                }
+                                
+                                
+                        }
+                        @media (max-width:1400px) {
+                            .advertising{
+                                justify-content: space-around;
+                                    .box{
+                                        width: 273px;
+                                    
+                                            img{
+                                                width: 273px;
+                                            }
+                                    }
+                            }
+                        }
+                        @media (max-width:1200px) {
+                            .advertising{
+                                padding: 100px;
+                                
+                                justify-content: space-between none;
+
+                                flex-wrap: wrap;
+                                    .box{
+                                        width: 285px;
+                                        background: #fff;
+                                    
+                                            img{
+                                                width: 285px;
+                                            }
+                                    }
+                                    .box:nth-child(3){
+                                        margin-top: 50px;
+                                    }
+                            }
+                        }
+                        @media (max-width:990px) {
+                            .advertising{
+                                gap: 50px;
+                                
+                                    .box{
+                                        width: 285px;
+                                        background: #fff;
+                                    
+                                            img{
+                                                width: 285px;
+                                            }
+                                    }
+                                    .box:nth-child(3){
+                                        margin-top: 0px;
+                                    }
+                            }
+                        }
+                        
+                        
+                }
+        }
+
+
+        .sect{
+            width: 100%;
+            height: auto    ;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 100px;
+            
+                .big_box{
+                    width: 1500px;
+                    flex-wrap: wrap;    
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                        .box_text{
+                            width: 500px;
+                        
+                        
+                                .text{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 10px;
+                                        h4{
+                                            font-weight: 700;
+                                            color: #f85e9f;
+                                        
+                                        }
+                                        h1{
+                                            font-size: 50px;
+                                            font-weight: 700;
+                                        }
+                                        p{
+                                            color: #95959a;
+                                            font-size: 20px;
+                                        }
+                                }
+                                .box{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    margin-top: 20px;
+                                    gap: 20px;
+                                        .child_box{
+                                            width: 200px;
+                                            height: 150px;
+                                            border-radius: 20px;
+                                            border: 1px solid #bdbfc7;
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+                                            align-items: center;
+                                            justify-content: center;
+                                                h2{
+                                                    color: #ff5721;
+                                                    font-weight: 700;
+                                                }
+                                                p{
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+
+                
+                
+
+
+                
+                .big_box2{
+                    width: 100%;
+                    margin-top: 200px;
+                    
+                        .container{
+                            display: flex;
+                            justify-content: space-between;
+
+                                .boxText{
+                                    width: 500px;
+
+                                        .text{
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+                                                h4{
+                                                    font-weight: 700;
+                                                    color: #f85e9f;
+                                                
+                                                }
+
+                                                h1{
+                                                    font-size: 40px;
+                                                    font-weight: 700;
+                                                }
+                                                
+                                                p{
+                                                    color: #95959a;
+                                                    font-size: 18px;
+                                                }
+                                        }
+
+
+                                        .box{
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 20px;
+                                                .child_box{
+                                                    width: 550px;
+                                                    height: 150px;
+                                                    border-radius: 20px;
+                                                    border: 1px solid #bdbfc7;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    justify-content: space-around;
+                                                    
+
+                                                        .mini-box{
+                                                            width: 100px;
+                                                            height: 100px;
+                                                            border-radius: 20px;
+                                                            background: #ff5721;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+
+                                                                img{
+                                                                    width: 50px;
+                                                                }
+                                                        }
+                                                        
+
+                                                }
+                                        }
+                                }
+                                img{
+                                    width: 650px;
+                                }
+                        }
+                }
+
+                
+            
+        }
+        @media (max-width: 1400px) {
+            .sect{
+                justify-content: center;
+
+
+                    .big_box{
+                        width: 100%;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 50px;
+
+
+                            .box_text{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+
+                                    .text{
+                                        align-items: center;
+                                        gap: 20px;
+
+                                            p{
+                                                width: 700px;
+                                                text-align: center;
+                                            }
+
+                                            
+                                    }
+                                    .box{
+                                        width: 80%;
+                                        height: auto;
+                                        flex-wrap: wrap;
+                                        margin-top: 50px;
+                                        justify-content: space-between;
+                                            .child_box{
+                                                width: 400px;
+                                            }
+                                    }
+                            }
+
+
+                        
+                    }
+                    .big_box2{
+
+                            .container{
+                                flex-wrap: wrap-reverse;
+                                justify-content: center;
+
+                                    .boxText{
+                                        width: 700px;
+                                        margin-top: 70px;
+
+                                            .text{
+
+                                                align-items: center;
+
+                                                    p{
+                                                        width: 100%;
+                                                        text-align: center;
+                                                    }
+                                                
+                                            }
+                                            .box{
+                                                margin-top: 50px;
+                                            }
+
+                                        
+                                    }
+
+                            }
+                    }
+            }
+        }
+
+        @media (max-width: 1025px) {
+            .sect{
+
+
+                    .big_box{
+                        width: 100%;
+                        img{
+                            width: 100%;
+
+                        }
+
+
+
+                            .box_text{
+                                width: 100%;
+
+                                    .text{
+                                        width: 100%;
+
+                                            h4{
+                                                font-size: 25px;
+                                            }
+                                            h1{
+                                                text-align: center;
+                                                font-size: 40px;
+                                            }
+
+
+                                            p{
+                                                width: 100%;
+                                            }
+
+                                            
+                                    }
+                                    .box{
+                                        justify-content: center;
+                                        
+                                    }
+                            }
+
+
+                        
+                    }
+                    .big_box2{
+
+                            .container{
+                                    img{
+                                        width: 500px;
+                                    }
+                            }
+                    }
+
+            }
+        }
+
+        .testimonials{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+                .bg_img{
+                    width: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    top: 0;
+                    height: 100%;
+
+                }
+
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;   
+                        .big-text_box{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top: 150px;
+                                h4{
+                                    font-weight: 700;
+                                    color: #f85e9f;
+                                
+                                }
+                                h1{
+                                    font-size: 50px;
+                                    font-weight: 700;
+                                }
+                                h5{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 20px;
+                                    font-weight: 800;
+
+                                        .star{
+                                            display: flex;
+                                            color: yellow;
+                                            gap: 20px;
+                                        }
+                                }
+                                P{
+                                    text-align: center;
+                                    color: #95959a;
+                                    font-weight: 600;
+                                }
+                        }
+                }
+        }
+        footer{
+            width: 100%;
+            height: auto;
+                .container{
+                    position: relative;
+                
+                        img{
+                            position: absolute;
+                            top: -60px;
+                            left: -20px;
+                            z-index: 1;
+                        }
+                        .login{
+                            width: 100%;
+                            height: 600px;
+                            background: #fffbf1;
+                            border-radius: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            justify-content: center;
+                            
+                        
+                                h3{
+                                    font-weight: 700;
+                                    color: #f85e9f;
+                                    text-transform: uppercase;
+                                
+                                }
+                                h1{
+                                    font-size: 50px;
+                                    font-weight: 700;
+                                }
+                        }
+                }
+        }
+        @media (max-width: 1400px) {
+
+            footer{
+                margin-top: 100px;
+
+
+                    .container{
+
+                            .login{
+                                    h3{
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                    }
+                                    h1{
+                                        font-size: 30px;
+                                    }
+                            }
+                    }
+            }
+            
+        }
+        @media (max-width: 1300px) {
+
+            footer{
+                margin-top: 100px;
+                    .container{
+
+                            .login{
+                                height: 400px;    
+                                
+
+                            }
+                    }
+            }
+            
+        }
+
+
+        
+
+
+
+}
+
+@media(max-width: 1400px){
+    body{
+            .q{
+                display: none;
+                    .stain{
+                        display: none;
+
+                    }
+            }
+        
+    }
+}
+
+
+
+
